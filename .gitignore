@@ -2,3 +2,6 @@
 src/py_git/commands/logs/*
 # In future (when pygit.pull() will be ready) will be added LazyMerge in CLI version (another repo)
 !src/py_git/commands/logs/pygit_pull.log
+
+# Some trash
+__pycache__/
