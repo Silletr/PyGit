@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pygit"
+version = "0.1.0"
+description = "Python wrapper for GitHub CLI"
+authors = ["Silletr <silletr@example.com>"]
+
+packages = [{ include = "py_git", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+loguru = "^0.7.3"
+typer = "^0.21.1"
+
+[tool.poetry.scripts]
+pygit = "py_git.__main__:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

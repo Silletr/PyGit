@@ -1,18 +1,15 @@
 # --- IMPORTS ---
 from subprocess import run, CalledProcessError
-from loguru import logger
 from shutil import which
+from py_git.utils.logger import get_command_logger
+
 
 # --- GIT PATH ---
 git = str(which("git"))
 
+
 # --- LOGGER CONFIG ---
-logger.add(
-    sink="../logs/pygit_commit.log",
-    level="INFO",
-    colorize=True,
-    format="{time:DD/MM/YYYY} | {message}",
-)
+logger = get_command_logger("commit")
 
 
 # --- COMMIT FUNCTION ---
@@ -35,6 +32,7 @@ def git_commit(commit_message: str = "", changed_files: str = ""):
         raise
 
 
-changed_file = input("Changed files: ")
-commit_message = input("Message for commit: ")
-git_commit(changed_files=changed_file, commit_message=commit_message)
+if __name__ == "__main__":
+    changed_file = input("Changed files: ")
+    commit_message = input("Message for commit: ")
+    git_commit(changed_files=changed_file, commit_message=commit_message)

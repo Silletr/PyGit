@@ -1,5 +1,6 @@
 # --- IMPORTS ---
 from shutil import which
+from py_git.utils.logger import get_command_logger
 from loguru import logger
 from subprocess import run, CalledProcessError
 
@@ -11,12 +12,7 @@ if not gh_path:
 gh = str(gh_path)
 
 # --- LOGGER CONFIG ---
-logger.add(
-    sink="../logs/pygit_commit.log",
-    level="INFO",
-    colorize=True,
-    format="{time:DD/MM/YYYY} | {message}",
-)
+logger = get_command_logger("clone")
 
 
 # --- CLONE FUNCTION ---

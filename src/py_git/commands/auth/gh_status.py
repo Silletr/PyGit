@@ -1,6 +1,6 @@
 # --- IMPORTS ---
 from subprocess import run
-from loguru import logger as log
+from py_git.utils.logger import get_command_logger
 from pathlib import Path
 from os import environ
 from shutil import which
@@ -10,17 +10,12 @@ pub_key = Path.home() / ".ssh" / "id_ed25519.pub"
 env = environ.copy()
 env["SSH_AUTH_SOCK"] = environ.get("SSH_AUTH_SOCK", "")
 
+# --- LOGGER ---
+log = get_command_logger("auth")
+
 # --- gh, SSH LOCATING ---
 gh = str(which("gh"))
 ssh = str(which("ssh"))
-
-# --- LOGGER CONFIG ---
-log.add(
-    sink="../logs/pygit_auth.log",
-    level="INFO",
-    colorize=True,
-    format="{time:DD/MM/YYYY} | {message}",
-)
 
 
 # --- CHECK SSH CONNECTION ---
