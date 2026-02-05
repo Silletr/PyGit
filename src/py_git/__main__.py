@@ -5,6 +5,8 @@ from py_git.commands.pull.git_pull import git_pull
 from py_git.commands.auth.gh_status import ssh_connection as status_main
 from py_git.commands.clone.gh_clone import clone_repo as clone_main
 from py_git.commands.create_repo.gh_create import create_repo
+from py_git.commands.push.git_push import git_push
+
 
 app = typer.Typer(help="PyGit - Python wrapper for GitHub CLI")
 
@@ -46,6 +48,11 @@ def create_repository(
         mode=mode,
         source=source,
     )
+
+
+@app.command()
+def push(to_branch: str = "master"):
+    git_push(to_branch=to_branch)
 
 
 if __name__ == "__main__":
