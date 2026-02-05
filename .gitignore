@@ -1,7 +1,5 @@
-# Ignoring log files
-src/py_git/commands/logs/*
-# In future (when pygit.pull() will be ready) will be added LazyMerge in CLI version (another repo)
-!src/py_git/commands/logs/pygit_pull.log
+# Log files (its too big, soo i think i dont need it in repo)
 
+src/logs/
 # Some trash
 __pycache__/

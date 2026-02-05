@@ -1,8 +1,0 @@
-04/02/2026 18:18:20 | INFO     | py_git.commands.auth.gh_status:27 | SSH key found: /home/silletr/.ssh/id_ed25519.pub
-04/02/2026 18:18:21 | INFO     | py_git.commands.auth.gh_status:35 | SSH connected to GitHub
-04/02/2026 18:18:21 | ERROR    | py_git.commands.pull.git_pull:23 | Git pull failed:
-error: cannot pull with rebase: You have unstaged changes.
-error: Please commit or stash them.
-
-04/02/2026 18:30:22 | INFO     | py_git.commands.auth.gh_status:27 | SSH key found: /home/silletr/.ssh/id_ed25519.pub
-04/02/2026 18:30:23 | INFO     | py_git.commands.auth.gh_status:35 | SSH connected to GitHub
