@@ -52,6 +52,9 @@ def create_repository(
 
 @app.command()
 def push(to_branch: str = "master"):
+    """Pushing changes to your branch.
+    BE CAREFUL - DEFAULT BRANCH IS master
+    IF YOU NEED OTHER - CONCRETIZE IT"""
     git_push(to_branch=to_branch)
 
 
