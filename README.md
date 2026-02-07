@@ -43,7 +43,7 @@ poetry install
 poetry shell
 
 # Use it
-pygit status
+pygit auth status
 pygit commit "feat: add push command"
 pygit pull
 pygit push
