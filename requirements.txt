@@ -1,2 +1,2 @@
-typer
-loguru
+typer==0.21.1
+loguru==0.7.3
