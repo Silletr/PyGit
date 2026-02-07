@@ -1,0 +1,66 @@
+<h1 align="center">💫 PyGit</h1>
+
+<p align="center">
+  <b>Git + GitHub CLI, but in Python.</b><br>
+  <i>Less typing in terminal — more coding in editor.</i>
+</p>
+
+![Preview](./demo/demo.gif)
+
+<p align="center">
+    <a href="https://github.com/Silletr/PyGit/stargazers">
+    <img src="https://img.shields.io/github/stars/Silletr/PyGit?style=flat-square&logo=github" alt="Stars">
+  </a>
+  <a href="https://github.com/Silletr/PyGit/issues">
+    <img src="https://img.shields.io/github/issues/Silletr/PyGit?style=flat-square&logo=github" alt="Issues">
+  </a>
+  <img src="https://img.shields.io/badge/Python-3.12.3%2B-blue?style=flat-square&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT">
+</p>
+
+## Why PyGit?
+
+- Beautiful TUI (thanks to Rich/Typer)
+- One command for everything: `pygit pull`, `pygit commit "fix bug"`, `pygit push`
+- Custom logs per command (`logs/pull.log`, `logs/commit.log`, etc.)
+- Built-in gh CLI integration (auth, repo create, etc.)
+- Zero external dependencies hell — works in poetry/venv
+
+## Quick Start
+
+```bash
+# Install from git (recommended for now)
+pip install git+https://github.com/Silletr/PyGit.git
+
+# Or clone & install editable
+git clone https://github.com/Silletr/PyGit.git
+cd PyGit
+poetry install
+poetry shell
+
+# Use it
+pygit status
+pygit commit "feat: add push command"
+pygit pull
+pygit push
+```
+
+## Development
+
+```bash
+git clone https:github.com/Silletr/PyGit.git
+cd PyGit
+poetry install
+poetry shell
+
+# Run any command
+pygit auth status
+```
+
+## Contribuing
+
+PR's are welcome! But for **Major changes** open the issue first pls!
+
+## License
+
+MIT - do whatever tf you want because im not eager :D
