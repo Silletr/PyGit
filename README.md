@@ -17,7 +17,7 @@
     <img src="https://img.shields.io/github/issues/Silletr/PyGit?style=for-badge&logo=github" alt="Issues">
   </a>
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/github/license/Silletr/LazyDeveloperHelper?style=for-the-badge&color=8281f3&labelColor=242529" alt="License" />
+  <img src="https://img.shields.io/github/license/Silletr/PyGit?style=for-the-badge&color=8281f3&labelColor=242529" alt="License" />
   <img src="https://img.shields.io/github/last-commit/Silletr/LazyDeveloperHelper?style=for-the-badge&color=8281f3&labelColor=242529" alt="Last Commit" />
 </p>
 </p>
