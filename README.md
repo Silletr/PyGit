@@ -24,7 +24,7 @@
 
 ## Why PyGit?
 
-- Beautiful TUI (thanks to Rich/Typer)
+- Beautiful TUI (thanks to Typer)
 - One command for everything: `pygit pull`, `pygit commit "fix bug"`, `pygit push`
 - Custom logs per command (`logs/pull.log`, `logs/commit.log`, etc.)
 - Built-in gh CLI integration (auth, repo create, etc.)
