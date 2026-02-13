@@ -67,4 +67,4 @@ PR's are welcome! But for **Major changes** open the issue first pls!
 
 ## License
 
-MIT - do whatever tf you want because im not eager :D
+MIT - do whatever tf you want because im not greed :D
