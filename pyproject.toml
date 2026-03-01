@@ -1,8 +1,9 @@
 [tool.poetry]
-name = "pygit"
-version = "0.1.0"
-description = "Python wrapper for GitHub CLI"
-authors = ["Silletr <silletr@example.com>"]
+name = "pygit-silletr"
+version = "0.1.1"
+description = "Python wrapper for GitHub and Git CLI"
+authors = ["Silletr <silletr@duck.com>"]
+readme = "README.md"
 
 packages = [{ include = "py_git", from = "src" }]
 

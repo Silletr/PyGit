@@ -33,7 +33,10 @@
 ## Quick Start
 
 ```bash
-# Install from git (recommended for now)
+# Install from PyPi (recommend)
+pip3 install pygit-silletr
+
+# Install from git
 pip install git+https://github.com/Silletr/PyGit.git
 
 # Or clone & install editable

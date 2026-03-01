@@ -32,9 +32,12 @@ def status():
 
 
 @app.command()
-def clone(repo_url: str):
-    """Clone repo by URL"""
-    clone_main(repo_url)
+def clone(repo_owner: str, repo_name: str):
+    """Clone repo by Repository Owner and Repository Name,
+    Command example:
+    pygit clone REPO_OWNER REPO_NAME
+    """
+    clone_main(repo_owner=repo_owner, repository_name=repo_name)
 
 
 @app.command()

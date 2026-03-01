@@ -4,3 +4,4 @@ src/logs/
 # Some trash
 __pycache__/
 !poetry.lock
+dist/
